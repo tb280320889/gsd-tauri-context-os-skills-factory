@@ -5,7 +5,8 @@
 1. 设计母稿（新的项目定性、分层、协议、治理与演进路线）
 2. M0-MX 开发大纲（按里程碑推进 skill factory 的建设顺序）
 3. skill 开发方法论文档（用于跨 session / 跨 agent 保持原则稳定）
-4. 各 M 阶段 TRD-like 文档（用于后续切分 phase、分派 planner / executor / verifier）
+4. beads 工作流文档（用于任务、依赖、进度跟踪）
+5. 各 M 阶段 TRD-like 文档（用于后续切分 phase、分派 planner / executor / verifier）
 
 当前补充约束：
 
@@ -22,6 +23,7 @@
 - `00-design-mother-draft.md`
 - `01-M0-MX-skill-development-outline.md`
 - `02-skill-development-methodology.md`
+- `03-beads-workflow-guide.md`
 - `trd/M0-trd-like.md`
 - `trd/M1-trd-like.md`
 - `trd/M2-trd-like.md`

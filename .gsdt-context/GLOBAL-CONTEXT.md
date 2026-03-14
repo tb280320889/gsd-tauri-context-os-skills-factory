@@ -107,6 +107,7 @@
 - planner 必须在 phase 文档中记录：选择了什么、排除了什么、为什么
 - executor / debugger / verifier 默认不自行扩展 skill 集合
 - 本仓库优先关注 skill system 本身，不提前把产品实现复杂度带进来
+- beads 用于任务与依赖追踪，context docs 用于保存长期真值与关键阶段进度
 
 ## Versioning Discipline
 

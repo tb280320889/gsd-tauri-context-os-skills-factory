@@ -2,6 +2,7 @@
 
 ## Mission
 
+所有思考和回答都 **MUST** 使用中文
 本仓库是一个面向 `GSD + Tauri2 跨端 App` 项目的 skills 工具集工厂。
 它会在后续作为 submodule / vendored toolkit 被多个 GSD 项目引入，用于给 planner 提供统一的 skills 发现、选择、注入与维护规则。
 
@@ -13,8 +14,10 @@
 2. `.gsdt-context/GLOBAL-CONTEXT.md`
 3. `.gsdt-context/ROADMAP-AND-PROGRESS.md`
 4. `.gsdt-context/milestones/<M>-CONTEXT.md`
-5. 当前 phase 文档
-6. 被 planner 注入的 skill 闭包
+5. `docs/02-skill-development-methodology.md`
+6. `docs/03-beads-workflow-guide.md`
+7. 当前 phase 文档
+8. 被 planner 注入的 skill 闭包
 
 ## Core Rules
 
@@ -27,6 +30,27 @@
 7. 创建新 skill 前，优先复用 official MCP / official skill / official docs / `llms.txt` / 高质量开源实践。
 8. 每个 milestone 开发必须尽量保持独立上下文，避免长上下文污染。
 9. 任何重要决策、方法论、优先级调整、阶段进度都必须回写到对应 context docs，不能只停留在临时对话中。
+
+## Issue Tracking
+
+本仓库使用 `bd (beads)` 做任务、依赖与进度跟踪。
+
+最小要求：
+
+- 开始一项正式工作前，先检查 `bd ready` / `bd list`
+- 重要 skill / 文档 / 治理工作应创建 beads issue
+- 完成后关闭对应 issue，而不是只在对话中说明
+- beads 跟踪任务状态，`.gsdt-context` 保存长期真值与阶段进度
+
+快速入口：
+
+- `bd ready`
+- `bd list`
+- `bd create --title "..." --type task --priority 1`
+- `bd update <issue-id> --status in_progress`
+- `bd close <issue-id> --reason "..."`
+
+详细规则见：`docs/03-beads-workflow-guide.md`
 
 ## Naming Convention
 
@@ -72,7 +96,7 @@
 
 1. `GSDT-anc-using-GSDT`
 2. `GSDT-meta-GSD-skill-creator`
-3. using-* 二层索引体系
+3. using-\* 二层索引体系
 4. naming / registry / versioning / milestone context system
 
 ## Landing the Plane (Session Completion)
@@ -96,6 +120,7 @@
 7. **Hand off** - Provide context for next session
 
 **CRITICAL RULES:**
+
 - Work is NOT complete until `git push` succeeds
 - NEVER stop before pushing - that leaves work stranded locally
 - NEVER say "ready to push when you are" - YOU must push

@@ -52,6 +52,8 @@
 - `skills/registry.yaml`: created
 - `.gsdt-context`: initialized
 - methodology docs: added
+- beads initialized and adopted for issue tracking
+- beads workflow guide added and linked from `AGENTS.md`
 
 ## Update Rule
 

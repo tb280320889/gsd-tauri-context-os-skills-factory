@@ -1,0 +1,37 @@
+version: 0.1.0
+project_prefix: GSDT
+registry_status: draft
+skills:
+  - skill_name: GSDT-anc-using-GSDT
+    skill_version: 0.1.0
+    family: anc
+    domain: using
+    capability: GSDT
+    status: draft
+    git_path: skills/GSDT-anc-using-GSDT/SKILL.md
+    truth_sources:
+      - .gsdt-context/GLOBAL-CONTEXT.md
+      - AGENTS.md
+      - docs/00-design-mother-draft.md
+    handoff_to:
+      - GSDT-meta-GSD-skill-creator
+      - GSDT-anc-phase-planner
+    notes: 主介绍与主编排 skill，负责指导 agent 使用整个 skill 工厂。
+
+  - skill_name: GSDT-meta-GSD-skill-creator
+    skill_version: 0.1.0
+    family: meta
+    domain: GSD
+    capability: skill-creator
+    status: draft
+    git_path: skills/GSDT-meta-GSD-skill-creator/SKILL.md
+    truth_sources:
+      - docs/appendix/skill-authoring-standard.md
+      - docs/appendix/skill-registry-seed.md
+      - docs/appendix/truth-source-and-research-policy.md
+      - AGENTS.md
+      - .gsdt-context/GLOBAL-CONTEXT.md
+    handoff_to:
+      - GSDT-anc-using-GSDT
+      - GSDT-anc-phase-planner
+    notes: 元 skill，负责生产后续正式 skills 的标准定义与配套产物。

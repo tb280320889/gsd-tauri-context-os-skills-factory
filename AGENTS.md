@@ -105,19 +105,23 @@
 
 **MANDATORY WORKFLOW:**
 
-1. **File issues for remaining work** - Create issues for anything that needs follow-up
+1. **File issues for remaining work** - Create beads issues for anything that needs follow-up
 2. **Run quality gates** (if code changed) - Tests, linters, builds
-3. **Update issue status** - Close finished work, update in-progress items
+3. **Update issue status** - Close finished beads issues, update in-progress items
 4. **PUSH TO REMOTE** - This is MANDATORY:
    ```bash
-   git pull --rebase
-   bd sync
+   git pull --rebase origin master
    git push
    git status  # MUST show "up to date with origin"
    ```
 5. **Clean up** - Clear stashes, prune remote branches
 6. **Verify** - All changes committed AND pushed
 7. **Hand off** - Provide context for next session
+
+Notes:
+
+- Issue creation / update / close conventions are defined in `Issue Tracking` and `docs/03-beads-workflow-guide.md`
+- `bd sync` 不是当前已验证可用的固定命令，不应写入强制收尾流程
 
 **CRITICAL RULES:**
 

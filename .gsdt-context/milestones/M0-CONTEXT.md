@@ -82,3 +82,16 @@
 - `skill registry seed`: 已落地为 `skills/registry.yaml`
 - `milestone context system`: 已建立 `.gsdt-context`
 - `M0 skill list reprioritization`: 已确认，已前移 registry / truth-source / research policy
+- `beads task split`: 已完成 M0 P0/P1/P2 tasks 拆分与依赖建立
+
+## Beads Task Mapping
+
+- `GSDT-gov-online-research-official-first` -> `gsd-tauri-context-os-skills-factory-p8o`
+- `GSDT-gov-skill-registry-index` -> `gsd-tauri-context-os-skills-factory-t5m`
+- `GSDT-anc-gsd-root-router` -> `gsd-tauri-context-os-skills-factory-e04`
+- `GSDT-anc-project-researcher` -> `gsd-tauri-context-os-skills-factory-epf`
+- `GSDT-anc-phase-planner` -> `gsd-tauri-context-os-skills-factory-jss`
+- `GSDT-gov-truth-source-registry` -> `gsd-tauri-context-os-skills-factory-k3u`
+- `GSDT-gov-docs-governance` -> `gsd-tauri-context-os-skills-factory-71q`
+- `GSDT-ver-skill-eval-regression` -> `gsd-tauri-context-os-skills-factory-8fl`
+- `GSDT-gov-minimal-2oss` -> `gsd-tauri-context-os-skills-factory-lp0`
